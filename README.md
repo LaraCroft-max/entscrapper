@@ -10,45 +10,8 @@ ENT Scrapper est une application Node.js qui se connecte à un ENT compatible Sc
 
 Les données sont synchronisées automatiquement et affichées dans une interface web moderne et responsive.
 
-🇬🇧 Overview
-
-ENT Scrapper is a Node.js application that connects to a Scolengo-compatible ENT to fetch and display:
-
-📅 Weekly timetable
-
-📊 Grades and averages (global & per subject)
-
-📝 Homework assignments (with urgent / done status)
-
-Data is automatically synchronized and displayed in a clean web dashboard.
-
-✨ Fonctionnalités / Features
-
-🔐 Authentification via token Scolengo
-
-🔄 Synchronisation automatique toutes les 20 minutes
-
-💾 Cache local (data/cache.json)
-
-✅ Marquer les devoirs comme faits
-
-⚠ Détection des devoirs urgents
-
-🌙 Interface web moderne (dark mode)
-
-🛠️ Technologies
-
-Node.js
-
-Express
-
-scolengo-api
-
-node-cron
-
-HTML / CSS (vanilla)
-
 🚀 Installation
+
 1️⃣ Prérequis
 
 Node.js ≥ 18
@@ -93,11 +56,11 @@ http://localhost:3000
 
 Synchronisation automatique au démarrage
 
-Puis toutes les 20 minutes
+Puis toutes les 5 minutes
 
 Les données sont stockées dans :
 
-data/cache.json
+data/cache.json ( à effacer si erreur )
 
 🖥️ Interface Web
 
@@ -105,7 +68,7 @@ data/cache.json
 
 📊 Notes + moyennes
 
-📝 Liste complète des devoirs
+📝 Liste incomplète des devoirs !
 
 ✅ Case à cocher pour marquer un devoir comme fait
 
@@ -116,36 +79,14 @@ entscrapper/
 ├── services/
 │   └── ent.js
 ├── server.js
-├── token.json
+├── token.json ( à ajouter )
 ├── package.json
 └── README.md
-
-⚠️ Avertissement
-
-Ce projet est :
-
-🔒 Personnel
-
-🧪 Expérimental
-
-❌ Non affilié officiellement à Scolengo ou à un ENT
-
-Utilisation à vos propres risques.
 
 📜 Licence
 
 MIT – libre d’utilisation et de modification.
 
 support = entscrapper@gmail.com
-
-1-01
-
-Erreur 500 pour les devoirs , notes et cours.
-
-1-02
-
-Erreurs 500 corrigés sauf pour les notes ( à regler )
-
-1-03
 
 
